@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- CSS -->
+    <style>
+   
+ .cta {
+      position: absolute;
+      display: inline-block;
+      padding: 6px 18px; /* Shorter height & width */
+      font-size: 13px; /* Compact text */
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      background: linear-gradient(to top right, transparent 50%, #0056b3 50%);
+      background-size: 200% 200%;
+      background-position: bottom left;
+      border: 2px solid #0056b3; /* Added border */
+      border-radius: 5px; /* Square edges */
+      overflow: hidden;
+      text-align: center;
+      letter-spacing: 0.5px;
+      transition: background-position 0.4s ease-in-out, border-color 0.4s ease-in-out;
+      cursor: pointer;
+  }
+
+  /* Move Contact Button */
+  .contact-btn-container {
+      position: relative;
+      top: 8px;   /* Move down */
+      left: 150px;  /* Move right */
+  }
+
+  /* Hover Effect - Fills Background from Bottom Left to Right */
+  .cta:hover {
+      background-position: top right;
+      color: white;
+      border-color: #003d80; /* Slightly darker border on hover */
+  }
+
+  /* Wave Container */
+  .wave-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+
+  /* Waves */
+  .wave {
+      position: absolute;
+      bottom: 0;
+      width: 200%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+      animation: wave-move 3s infinite linear;
+  }
+
+  .wave1 {
+      left: -50%;
+      animation: wave-move 3s infinite linear;
+  }
+
+  .wave2 {
+      left: -40%;
+      animation: wave-move 4s infinite linear reverse;
+  }
+
+  /* Wave Animation */
+  @keyframes wave-move {
+      0% { transform: translateX(-50%) translateY(5px) scale(1); }
+      50% { transform: translateX(50%) translateY(-5px) scale(1.05); }
+      100% { transform: translateX(-50%) translateY(5px) scale(1); }
+  }
+
+  /* Click Effect */
+  .cta:active {
+      transform: scale(0.92);
+  }
+/* Download CV button */
+
+/* Base Button Styling */
+.animated-btn {
+    position: absolute;
+      display: inline-block;
+      padding: 6px 10px; /* Shorter height & width */
+      font-size: 13px; /* Compact text */
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      background: linear-gradient(to top right, transparent 50%, #0056b3 50%);
+      background-size: 200% 200%;
+      background-position: bottom left;
+      border-radius: 5px; /* Square edges */
+      overflow: hidden;
+      text-align: center;
+      letter-spacing: 0.5px;
+      transition: background-position 0.4s ease-in-out, border-color 0.4s ease-in-out;
+      cursor: pointer;
+  }
+  
+  /* Move Download Button */
+  .download-btn-container {
+      position: relative;
+      top: 7px;  /* Move up */
+      left: 0px; /* Move left */
+  }
+
+  /* Hover Effect - Fills Background from Right */
+  .animated-btn:hover {
+    background-position: top right;
+      color: white;
+      border-color: #003d80; /* Slightly darker border on hover */
+  }
+
+  /* Wave Container */
+  .wave-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+
+  /* Waves */
+  .wave {
+      position: absolute;
+      bottom: 0;
+      width: 200%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+      animation: wave-move 3s infinite linear;
+  }
+
+  .wave1 {
+      left: -50%;
+      animation: wave-move 3s infinite linear;
+  }
+
+  .wave2 {
+      left: -40%;
+      animation: wave-move 4s infinite linear reverse;
+  }
+
+  /* Wave Animation */
+  @keyframes wave-move {
+      0% { transform: translateX(-50%) translateY(5px) scale(1); }
+      50% { transform: translateX(50%) translateY(-5px) scale(1.05); }
+      100% { transform: translateX(-50%) translateY(5px) scale(1); }
+  }
+
+  /* Click Effect */
+  .animated-btn:active {
+      transform: scale(0.92);
+  }
+
+  /* Base Button Styling */
+  .cta-new {
+    position: absolute;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 6px 18px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(to top, transparent 50%, #0056b3 50%);
+    background-size: 100% 200%;
+    background-position: bottom;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    letter-spacing: 0.5px;
+    border: 2px solid #007BFF;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.6);
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.cta-new:hover {
+    background-position: top;
+    color: white;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.9);
+}
+
+/* Wave Container */
+.wave-container-new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Waves */
+.wave-new {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    animation: wave-move-new 3s infinite linear;
+}
+
+.wave1-new {
+    left: -50%;
+    animation: wave-move-new 3s infinite linear;
+}
+
+.wave2-new {
+    left: -40%;
+    animation: wave-move-new 4s infinite linear reverse;
+}
+
+/* Wave Animation */
+@keyframes wave-move-new {
+    0% { transform: translateX(-50%) translateY(5px) scale(1); }
+    50% { transform: translateX(50%) translateY(-5px) scale(1.05); }
+    100% { transform: translateX(-50%) translateY(5px) scale(1); }
+}
+
+/* Click Effect */
+.cta-new:active {
+    transform: scale(0.92);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 1);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hides scrolling */
+  margin: 0;
+  padding: 0;
+}
+
+ .home-img .img-box {
+   position: relative;
+   right: -550px;
+   top: -350px;
+   width: 25vw;
+   height: 25vw;
+   border-radius: 50%;
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+ .home-img .img-box::before,
+ .home-img .img-box::after {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: conic-gradient(transparent, transparent, transparent, #0e32ff);
+  transform: rotate(0deg);
+  animation: rotate-border 10s linear infinite;
+}
+.home-img .img-box::after {
+  animation-delay: -5s;
+
+}
+@keyframes rotate-border{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+ .home-img .img-box .img-item {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background:#0c0c0c;
+   border-radius: 50%;
+   border: .5px solid #0c0c0c;
+   display: flex;
+   justify-content: center;
+   z-index: 1;
+   overflow: hidden;
+ }
+ .home-img .img-box .img-item img{
+   position: absolute;
+   right: 25PX;
+   top: 0px;
+   display: block;
+   width: 85%;
+   object-fit: cover;
+   mix-blend-mode: lighten;
+ }
+
+
+
+.design {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+  .design .circle{
+   aspect-ratio: 1;
+   position: absolute;
+   border-radius: 50%;
+   top: 27%;
+   left: 75%;
+   transform: translate(-50%, -50%);
+   
+ }
+  .circle:nth-child(1){
+   background: linear-gradient(90deg, transparent 50%, #262525 50%);
+   width: 18rem;
+ }
+  .circle:nth-child(2){
+   position: absolute;
+   width: 12rem;
+   background-image: url("assets/img/Photo2.png");
+   background-size: 75%;
+   background-position: 50%;
+   background-repeat: no-repeat;
+   border: 1rem solid white;
+   box-shadow: 0 0 1rem #fff,
+   inset 0 0 1rem #fff,
+   0 0 2rem #3877ff,
+   inset 0 0 2rem #3877ff,
+   0 0 4rem #3877ff,
+   inset 0 0 4rem #3877ff;
+ }
+
+
+ .slider--item-image {
+  overflow: hidden; /* Hide overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider--item-image img {
+  position: absolute;
+  width:50%;  /* Zoom out (reduce size) */
+  height: auto;
+  object-fit: cover;
+  border-radius: 3px; /* Optional: for rounded corners */
+  box-shadow: 0 0 7px #ffff; /* Subtle glow */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.slider--item-center .slider--item-image img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider--item-center .slider--item-image:hover img {
+  transform: scale(2.5); /* Zoom in only on the center image */
+}
+
+.contact, .modal {
+  background: none !important;
+  background-image: none !important;
+}
+
+/* Transparent Message Input (Single Line) */
+textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white; /* Like Name & Email */
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    width: 100%;
+    height: 100px; /* Reduced height */
+    resize: none;
+    overflow: hidden; /* Hides extra lines */
+    text-align: center; /* Centers text */
+    margin-top: 10px; /* Moves the input lower */
+}
+
+/* Centered Placeholder (Message Label) */
+textarea::placeholder {
+    color: white;
+    opacity: 0.6;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* On Focus, Align Text to Left */
+textarea:focus {
+    text-align: left;
+}
+
+.hire {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    height: 100vh;            /* Full viewport height */
+}
+
+.contact-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 300px;
+    max-height: 310px;
+    display: flex;
+    flex-direction: column; /* Ensures content stacks properly */
+    justify-content: center; /* Centers content inside the box */
+    align-items: center;
+}
+
+
+  .contact-details:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  }
+
+  .contact-details h2 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+
+  .contact-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-details li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .contact-details li:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .contact-details img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .contact-details a, .contact-details span {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+
+  .contact-details a:hover {
+    color: #3877ff;
+  }
+
+  .copy-tooltip {
+    font-size: 0.7rem;
+    margin-left: 8px;
+    color: lightgray;
+  }
+
+  .contact-details li:hover .copy-tooltip {
+    color: white;
+  }
+
+  /* Resume Box */
+.resume-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 350px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 86, 179, 0.8);
+    transition: box-shadow 0.4s;
+    position: absolute;
+    bottom: 55px;
+    left: 0px;
+    overflow: hidden;
+}
+
+/* Hover Effect - Glowing Border */
+.resume-box:hover {
+    box-shadow: 0 0 20px rgba(0, 86, 179, 1);
+}
+
+/* Resume Note */
+.resume-note {
+    font-size: 14px;
+    color: #c3ff38;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Resume Button with Glow and Hover Effect */
+.resume-btn {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 150px; /* Adjust width */
+    height: 40px; /* Adjust height */
+    padding: 10px; /* Add padding for better spacing */
+    font-size: 16px; /* Slightly increase font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid rgba(0, 86, 179, 0.8);
+    border-radius: 5px;
+    transition: background 0.4s, box-shadow 0.4s, transform 0.2s;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+
+/* Button Hover Effect */
+.resume-btn:hover {
+    background: rgba(0, 86, 179, 0.5);
+    box-shadow: 0 0 15px rgba(0, 86, 179, 1);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Wave Effect Covering Box */
+.wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    animation: wave-move 3s infinite linear;
+}
+
+.wave1 {
+    left: -50%;
+    animation: wave-move 3s infinite linear;
+}
+
+.wave2 {
+    left: -40%;
+    animation: wave-move 4s infinite linear reverse;
+}
+
+/* Wave Animation */
+@keyframes wave-move {
+    0% { transform: translateX(-50%) translateY(5px) scale(1); }
+    50% { transform: translateX(50%) translateY(-5px) scale(1.05); }
+    100% { transform: translateX(-50%) translateY(5px) scale(1); }
+}
+
+/* Ensure the slider item has a relative positioning context */
+.slider--item {
+  position: absolute; /* This is the reference point for absolute positioning */
+  text-align: center;
+}
+
+/* Position the title */
+.slider--item-title {
+  position: absolute;   /* Absolutely position the title */
+  top: -180px;            /* Position it 20px from the top of the parent container */
+  left: 50%;            /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust for true centering */
+  text-align: center;   /* Center the text */
+  color: white;         /* Adjust the text color (optional, depending on your background) */
+  font-size: 22px;      /* Adjust the font size */
+  font-weight: bold;    /* Make it bold */
+  white-space: nowrap;  /* Prevent line breaks in the title */
+  z-index: 10;          /* Ensure it appears above other elements */
+  overflow: hidden;     /* Ensures any overflowed text is hidden */
+  text-overflow: ellipsis; /* Add ellipsis if the text is too long */
+}
+
+/* Position the description */
+.slider--item-description {
+  position: absolute;  /* Absolutely position the description */
+  top: -100px;           /* Position it 80px from the top of the parent container */
+  left: 30%;           /*Center it horizontally */
+  transform: translateX(-50%); /* Adjust for true centering */
+  text-align: center;  /* Center the text */
+  color: white;        /* Adjust the text color (optional, depending on your background) */
+  white-space: nowrap;  /* Prevent line breaks in the title */
+  font-size: 16px;     /* Adjust the font size */
+  z-index: 10;         /* Ensure it appears above other elements */
+}
+
+/* Subtle Glow animation */
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 1), 0 0 10px rgba(0, 123, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 1), 0 0 15px rgba(0, 123, 255, 0.6);
+  }
+}
+
+    </style>
+
+
+
+
+  <!-- 01 Home -->
+  <title>MY_PORTFOLIO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header" style="height: 50px;">
+          <a class="header--logo" href="#0">
+              <h3>PORTFOLIO.</h3>
+          </a>
+            <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>About Me</span></li>
+            <li><span>Projects</span></li>
+            <li><span>Experience</span></li>
+            <li><span>Contact</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1 style="color: #3877ff;">Hello!</h1>
+                  <h2 style="margin-top: -30px;">I'm</h2>
+                  <h2 style="color: #0e32ff;">SABAVATH PAVAN KALYAN</h2>
+                  <span id="typing-animation"></span>
+                  <style>
+                    /* Styling the container to prevent text movement */
+                    #typing-container {
+                      display: inline-block;
+                      min-width: 320px; /* Adjust as per text length */
+                      text-align: center;
+                      font-size: 24px;
+                      font-weight: bold;
+                      color: white;
+                      white-space: nowrap;
+                      overflow: hidden;
+                      border-right: 3px solid white; /* Blinking cursor effect */
+                      animation: blink-cursor 0.8s infinite;
+                    }
+                  
+                    /* Blinking cursor effect */
+                    @keyframes blink-cursor {
+                      50% { border-color: transparent; }
+                    }
+                  </style>
+                  
+                  <div id="typing-container">
+                    <span id="typing-animation"></span>
+                  </div>
+                  
+                  <script>
+                    const typingAnimationElement = document.getElementById('typing-animation');
+                    const typingTexts = [
+                      'Collecting Raw Data 📊',
+                      'Cleaning & Preprocessing Data 🛠️',
+                      'Exploring Data Trends 🔍',
+                      'Writing SQL Queries for Insights 💡',
+                      'Performing Data Analysis 📈',
+                      'Finding Patterns & Correlations 🔗',
+                      'Building Interactive Dashboards 📊',
+                      'Telling a Story with Data 🎯',
+                      'Driving Data-Driven Decisions 🚀',
+                      'Transforming Data into Business Value 💼'
+                    ];
+                  
+                    let textIndex = 0;
+                    let charIndex = 0;
+                    let isDeleting = false;
+                  
+                    function typeEffect() {
+                      const currentText = typingTexts[textIndex];
+                      const displayText = isDeleting 
+                        ? currentText.substring(0, charIndex--) 
+                        : currentText.substring(0, charIndex++);
+                  
+                      typingAnimationElement.textContent = displayText;
+                  
+                      let typingSpeed = isDeleting ? 50 : 100; // Speed up deletion
+                      if (!isDeleting && charIndex === currentText.length) {
+                        typingSpeed = 1000; // Pause before deleting
+                        isDeleting = true;
+                      } else if (isDeleting && charIndex === 0) {
+                        isDeleting = false;
+                        textIndex = (textIndex + 1) % typingTexts.length;
+                        typingSpeed = 500; // Small pause before re-typing
+                      }
+                  
+                      setTimeout(typeEffect, typingSpeed);
+                    }
+                  
+                    typeEffect();
+                  </script>
+                  
+                  
+                 <p>"I'm a passionate and detail-oriented Data Analyst Fresher with expertise in<br>Excel, SQL, Python, and Power BI. Explore my portfolio to see my projects or<br>download my resume below."</p>
+                 
+                <!-- Download Button -->
+                <div class="download-btn-container">
+                 <a href="assets\PG - Resume.pdf" download="SABAVATH_PAVAN_KALYAN_Resume.pdf" class="animated-btn">
+                          <span>Download CV</span>
+                          <div class="wave-container">
+                              <div class="wave wave1"></div>
+                              <div class="wave wave2"></div>
+                          </div>
+                      </a>
+                    </div>
+
+                      <!-- Contact Me Button -->
+                      <div class="contact-btn-container">
+                        <button class="cta">
+                          Hire Me
+                            <div class="wave-container">
+                                <div class="wave wave1"></div>
+                                <div class="wave wave2"></div>
+                            </div>
+                        </button>
+                      </div>
+         
+                 <div class="home-img" style="position: relative; height:0px; width: 0px;">
+                  <div class="img-box">
+                   <div class="img-item">
+                     <img src="assets\img\Photo.png" alt="">
+                    </div>
+                    </div>
+                 </div>
+            </div>
+              <div class="intro--options" style="margin-top: 20px;">
+
+                <a href="#skills">
+                  <h3 style="margin: -10px;">Data Cleaning & Preprocessing</h3>
+                  <p style="margin: 20px; margin-left: -10px;">Transforming messy data into structured insights using SQL, Python, and Excel.</p>
+               </a>
+              
+                <a href="#visualization">
+                  <h3 style="margin: -10px; ">Data Storytelling & Dashboards</h3>
+                    <p style="margin: 20px; margin-left: -10px;">Creating interactive dashboards with Excel, Power BI.</p>
+                </a>
+                <a href="#insights">
+                  <h3 style="margin: -10px;">Data-Driven Decision<br>Making</h3>
+                    <p style="margin: 20px; margin-left: -10px;">Analyzing trends and generating reports to help businesses grow.</p>
+                </a>
+            </div>
+          </li>
+        
+          <!-- 02 About Me -->
+          <li class="l-section section">
+              <div class="design">
+              <div class="circle"></div>
+               <div class="circle"></div>
+             </div> 
+             <div class="about">
+              
+              <div class="about--banner">
+                <!-- New Contact Me Button -->
+                    <div >
+                <button class="cta" style="position: absolute; top: 0%; left: 45%; transform: translate(-50%, 0);">
+                  Hire Me
+                    <div class="wave-container-new">
+                         <div class="wave-new wave1-new"></div>
+                         <div class="wave-new wave2-new"></div>
+                      </div>
+                </button>
+                </div>
+                <div class="col-sm-6 col-md-7">
+                                  <br>
+            <div class="about-info" >
+                  <p><span class="title-s"style="color: #3877ff">NAME: </span> <span>SABAVATH PAVAN KALYAN</span></p>
+                  <p><span class="title-s"style="color: #3877ff">JOB ROLE: </span> <span>Data Analyst</span></p>
+                  <p><span class="title-s"style="color: #3877ff">EXPERIENCE: </span> <span>Fresher</span></p>
+                  <p><span class="title-s"style="color: #3877ff">ADDRESS: </span> <span>Hyderabad, India</span></p>
+             </div> 
+                  <h3 class="mb-4" style="color: #3877ff;"><u>About Me:</u></h3>
+								<p>"Aspiring Data Analyst with a solid grasp of data analytics, statistical modeling, and business intelligence. Strong technical proficiency in data visualization and predictive analysis. Adept at uncovering patterns and trends to drive business insights. Excited to apply my analytical mindset to real-world challenges and deliver data-driven solutions."</p>
+                
+                <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+                  <br>
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                      
+                    <li class="d-flex" style="text-align: right; position: absolute; right:169px; top: 300px;"><span style="color: #3877ff">PROFILE:</span> <span>Data Science &amp; Analytics</span></li>
+                    <li class="d-flex" style="text-align: right; position: absolute; right:33px; top: 320px;"><span style="color: #3877ff">DOMAIN:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+                    <li class="d-flex" style="text-align: right; position: absolute; right:28px; top: 340px;"><span style="color: #3877ff">EDUCATION:</span> <span>Master of Science in Information Systems</span></li>
+                    <li class="d-flex" style="text-align: right; position: absolute; right:170px; top: 360px;"><span style="color: #3877ff">LANGUAGE:</span> <span>English, Hindi, Telugu</span></li>
+                    <li class="d-flex" style="text-align: right; position: absolute; right:7px; top: 380px;"><span style="color: #3877ff">SKILLS:</span> <span>HTML, CSS, Excel, Python, SQL, Microsoft Power BI</span></li>
+                    <li class="d-flex" style="text-align: right; position: absolute; right:38px; top: 400px;"><span style="color: #3877ff">INTEREST:</span> <span>Traveling, Reading, Cooking, Gaming, etc..,</span></li>
+                   </ul>
+
+                  </div>
+                                
+                  <!-- Download Resume Button -->
+                  <div class="resume-box">
+                    <div class="wave-container">
+                        <div class="wave wave1"></div>
+                        <div class="wave wave2"></div>
+                    </div>
+                    <p class="resume-note">Want to know more? Download my Resume / CV.</p>
+                    <a href="assets\PG - Resume.pdf" download="SABAVATH_PAVAN_KALYAN_Resume.pdf" class="resume-btn">
+                        <span style="display: block; text-align: center; width: 100%;">Download</span></a>
+              </div>
+              </div>
+              </div>
+          </li>
+
+          <!-- 03 Projects -->
+           <li class="l-section section">
+            <div class="work">
+               <div class="work--lockup">
+                <!-- New Contact Me Button -->
+                <div>
+                  <button class="cta" style="position: absolute; bottom: -45%; left: 50%; transform: translate(-50%, 0);">
+                    Hire Me
+                      <div class="wave-container-new">
+                           <div class="wave-new wave1-new"></div>
+                           <div class="wave-new wave2-new"></div>
+                        </div>
+                  </button>
+                  </div>
+                <ul class="slider">
+                            
+                  <li class="slider--item slider--item-center">
+                     <p class="slider--item-title" style="font-family:'serif'; color:#68a145">1. DMART : PRODUCT SALES REPORT
+                      <br><samp>CLICK ON IMAGE TO VIEW DASHBOARD</samp></p>
+                      <p class="slider--item-description">This Dashboard was created in Microsoft Excel.</p>
+                      <a href="assets\DMart.xlsx">
+                      <div class="slider--item-image">
+                        <img src="assets\img\DMART.png" alt="excel">
+                      </div>
+                        </a>
+                  </li>
+
+                  <li class="slider--item slider--item">
+                    <p class="slider--item-title" style="font-family:'serif'; color:#8f3f01">2. VRINDA CLOTH STORE REPORT
+                      <br><samp>CLICK ON IMAGE TO VIEW DASHBOARD</samp></p>
+                      <p class="slider--item-description" style="color:#004753">This Dashboard Report was created in Power BI.</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiOTAyM2E2M2YtZmRmYS00NTdlLThlOWMtNzdjMzk2YWNmYjg2IiwidCI6IjE0NDk0ZTNkLWE4MTgtNDY2OS04OTVkLTE4YjhiOGZiZDY0MCJ9&pageName=ReportSectionff446b5d535c1dcac823">
+                      <div class="slider--item-image">
+                        <img src="assets\img\Powerbi_P.png" alt="powerBI">
+                      </div>
+                      </a>
+                  </li>
+
+                  <li class="slider--item slider--item">
+                    <p class="slider--item-title" style="font-family:'serif'; color:#924e17">3. Maven Roasters REPORT
+                     <br><samp>CLICK ON IMAGE TO VIEW DASHBOARD</samp></p>
+                     <p class="slider--item-description" style="color: #d4c2bb;">This Dashboard Report was created in Power BI.</p>
+                     <a href="https://app.powerbi.com/view?r=eyJrIjoiZDRkNGIyZDUtOTdhMy00NTc3LThjYjEtM2VkMmRlODU4NjQ3IiwidCI6IjE0NDk0ZTNkLWE4MTgtNDY2OS04OTVkLTE4YjhiOGZiZDY0MCJ9">
+                     <div class="slider--item-image">
+                       <img src="assets/img/Maven Roasters.png" alt="powerBI">
+                     </div>
+                       </a>
+                 </li>
+
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 04 Experience -->
+        <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                 <div class="modal">
+                  <div class="modal--information">
+                     <!-- New Contact Me Button -->
+              <div >
+                <button class="cta" style="position: absolute; top: 8%; left: 50%; transform: translate(-50%, 0);">
+                  Hire Me
+                    <div class="wave-container-new">
+                         <div class="wave-new wave1-new"></div>
+                         <div class="wave-new wave2-new"></div>
+                      </div>
+                </button>
+                </div>
+                    <h2>BACK OFFICE</h2>
+                    <h3>HMWSSB Meerpet (DIV-20) | Contract-Based</h3>
+                    <samp>1. Performed administrative tasks and data entry.<br>2. Maintained records and managed documentation efficiently.</samp>
+                  </div>
+                   <p>📅 Duration: 2 year 3 months (SEP 2020 - NOV 2022)</p>
+                 </div>
+                 
+                <div class="modal">
+                  <div class="modal--information">
+                   
+                    <h2>INTERNET SHOP & SOCIAL MEDIA MANAGEMENT</h3>
+                    <samp>1. Managed daily operations of an internet shop.<br>2. Handled social media platforms, including content creation and customer engagement.<br>
+                    3. Executed online promotions to increase reach and visibility.</samp>
+                    </div>
+                  <p>📅 Duration: 1 year 6 months (DEC 2022 - MAY 2024)</p>
+                   </div>
+
+                <div class="modal">
+                  <div class="modal--information">
+                    <h2>CUSTOMER SERVICE EXECUTIVE</h2>
+                    <h3>Air India</h3>
+                    <samp>1. Assisting passengers at counters and ensuring smooth check-in procedures.<br>2. Managing boarding gates, coordinating with ground staff for seamless operations.etc..,
+                    </samp>
+                    </div>
+                  <p>📅 Duration: JUL 2024 - (Currently Working)</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!---05 Contact--->
+          <li class="l-section section">
+             <div class="hire">
+                <div class="contact-details">
+                    <h2>Contact Info</h2>
+                    <ul>
+                     <li>
+                        <img src="assets\img\icons8-linkedin.gif" alt="LinkedIn">
+                        <strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com/in/sabavath-pavan-kalyan/" target="_blank">Click Here</a>
+                      </li>
+
+                      <li>
+                        <img src="assets\img\icons8-gmail-logo.gif" alt="Email">
+                        <strong>Email:</strong>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=spnayak103@gmail.com" target="_blank">
+                          SPNAYAK103@GMAIL.COM
+                        </a>
+                      </li>
+
+                      <li>
+                        <img src="assets/img/icons8-whatsapp.gif" alt="WhatsApp">
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/917893595090?text=Hello%20I%20want%20to%20talk%20with%20you!" target="_blank">
+                            Chat on WhatsApp
+                        </a>
+                    </li>
+                    
+                    <li>
+                      <img src="assets/img/icons8-github.gif" alt="GitHub">
+                      <strong>GitHub:</strong>
+                      <a href="https://github.com/spnayak103" target="_blank">Click Here</a>
+                    </li>
+                      
+                      <li>
+                        <img src="assets\img\icons8-address.gif" alt="Address">
+                        <strong>Address:</strong>
+                        <a href="https://www.google.com/maps?q=123+Street+City+Country" target="_blank">Hyderabad, India</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+              </div>
+         </div>
+    </div>
+ <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>About Me</Menu></li>
+    <li>Projects</li>
+    <li>Experience</li>
+    <li>Contact</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
+</html>
